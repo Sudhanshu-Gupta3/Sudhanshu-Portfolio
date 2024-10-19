@@ -1,0 +1,29 @@
+<footer>
+    <div [@animateFooter]>
+        <ul class="footer-left-bar d-none d-md-block">
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_github", "footer", "github")' href="https://github.com/Sudhanshu-Gupta3" target='_blank'>
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+            <li>
+                <a (click)='analyticsService.sendAnalyticEvent("click_linkedin", "footer", "github")' href="https://www.linkedin.com/in/sudhanshu-gupta-76aa1a1b1/" target='_blank'>
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="footer-right-bar d-none d-md-block">
+            <a (click)='analyticsService.sendAnalyticEvent("click_send_mail", "footer", "email")' href="mailto:sudhanshug7903@gmail.com" target='_blank'>sudhanshug7903&#64;gmail.com</a>
+        </div>
+    </div>
+
+    <div class="footer-credits text-center" >
+        <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_andresjose", "footer", "click")' href="https://github.com/Sudhanshu-Gupta3" target="_blank" rel="nofollow noopener noreferrer">
+            <div>Built with Angular 15 by Sudhanshu Gupta</div>
+        </a>
+        <!-- <a (click)='analyticsService.sendAnalyticEvent("click_github_portfolio_brittany", "footer", "click")' href="https://github.com/andresjosehr/andresjosehr-portfolio" target="_blank" rel="nofollow noopener noreferrer">
+            <div class="mt-2">Designed by Brittany Chiang & Jośe Andreś</div>
+        </a> -->
+    </div>
+
+</footer>
