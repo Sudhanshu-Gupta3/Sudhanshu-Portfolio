@@ -8,6 +8,7 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 })
 export class AboutComponent implements OnInit {
 
+  showself:boolean = true;
   constructor(
     public analyticsService: AnalyticsService
   ) { }
@@ -15,4 +16,11 @@ export class AboutComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toggle(){
+    if(this.showself){
+      this.showself = false;
+      return;
+    }
+    this.showself = true;
+  }
 }

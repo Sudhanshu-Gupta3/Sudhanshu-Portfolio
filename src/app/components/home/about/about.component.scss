@@ -28,6 +28,10 @@
         img{
             z-index: 2;
             position: relative;
+            border-radius: 50%;
+            border: 8px solid $Green; /* Set a thick border around the image */
+            padding: 10px;
+            transition: transform 0.6s ease;
         }
     }
 
